@@ -1,0 +1,13 @@
+# Python 3.11 on Windows; CUDA 13.0 wheels from the official PyTorch index.
+--extra-index-url https://download.pytorch.org/whl/cu130
+torch==2.13.0+cu130
+torchvision==0.28.0+cu130
+numpy==2.4.6
+pandas==3.0.6
+matplotlib==3.11.2
+scipy==1.17.1
+scikit-learn==1.9.1
+Pillow==12.3.0
+PyYAML==6.0.3
+tqdm==4.70.1
+fvcore==0.1.5.post20221221

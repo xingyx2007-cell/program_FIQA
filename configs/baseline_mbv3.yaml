@@ -1,0 +1,14 @@
+seed: 20260930
+image_size: 224
+batch_size: 64
+epochs: 1
+learning_rate: 0.0003
+weight_decay: 0.0001
+use_pretrained: false
+pretrained_weights_path: null
+horizontal_flip: false
+num_workers: 0
+train_split: splits/group_A.csv
+val_split: splits/group_B.csv
+smoke_train_samples: 128
+smoke_val_samples: 64

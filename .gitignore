@@ -1,0 +1,71 @@
+# This repository is an allowlist. Competition data and delivery files stay local.
+/*
+!/.gitignore
+!/README.md
+!/requirements.txt
+!/requirements-base.txt
+!/train.py
+!/train_final.py
+!/evaluate.py
+!/profile_model.py
+!/src/
+!/scripts/
+!/configs/
+!/tests/
+!/reports/
+!/presentation/
+
+# Only source and configuration files may enter these directories.
+/src/*
+!/src/*.py
+/scripts/*
+!/scripts/*.py
+/configs/*
+!/configs/*.yaml
+/tests/*
+!/tests/*.py
+
+# Publish aggregate evidence, not per-image labels, predictions, face crops,
+# machine-specific environment details, checkpoints, or raw image data.
+/reports/*
+!/reports/ablation_phase3.csv
+!/reports/ablation_phase3.png
+!/reports/baseline_metrics_curve.png
+!/reports/baseline_model_profile.txt
+!/reports/baseline_training_curve.png
+!/reports/EXPERIMENT_PLAN.md
+!/reports/final_full_model_profile.txt
+!/reports/final_model_profile.txt
+!/reports/FINAL_MODEL_DECISION.md
+!/reports/FINAL_TRAINING.md
+!/reports/GROUP_B_C_COMPARISON.md
+!/reports/label_distribution.png
+!/reports/LITERATURE_INDEX.md
+!/reports/LITERATURE_REVIEW.md
+!/reports/PHASE1_BASELINE.md
+!/reports/PHASE3_ANALYSIS.md
+!/reports/phase3_multiscale_profile.json
+!/reports/phase3_segment_metrics.csv
+!/reports/phase3_tail_metrics.csv
+!/reports/PHASE4_STABILITY.csv
+!/reports/PHASE4_STABILITY.md
+!/reports/PHASE4_STABILITY_SUMMARY.csv
+!/reports/resolution_distribution.png
+!/reports/ROBUSTNESS.md
+!/reports/robustness_metrics.png
+!/reports/robustness_prediction_shift.png
+!/reports/robustness_results.csv
+!/reports/SPLIT_PLAN.md
+!/reports/SUBMISSION_CHECKLIST.md
+
+# The defense presentation is safe to archive separately from the delivery ZIP.
+/presentation/*
+!/presentation/FIQA_Defense.pptx
+!/presentation/FIQA_Defense.pdf
+
+# Defense against caches if a new allowlisted subdirectory is added later.
+**/__pycache__/
+**/.pytest_cache/
+**/*.py[cod]
+**/.DS_Store
+**/Thumbs.db
